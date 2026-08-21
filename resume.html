@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Elsawy - Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 20mm 20mm 20mm;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, Georgia, serif;
+            color: #111111;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            font-size: 11pt;
+            background-color: #ffffff;
+        }
+
+        a {
+            color: rgb(124, 58, 237);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        /* Header section */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 28pt;
+            font-weight: bold;
+            margin: 0 0 8px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info {
+            font-size: 10.5pt;
+            color: #475569;
+            margin: 0;
+        }
+
+        .contact-info a {
+            color: #475569;
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        .contact-info a:hover {
+            color: rgb(124, 58, 237);
+            text-decoration: underline;
+        }
+
+        /* Section Headings */
+        section {
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            font-size: 13pt;
+            color: rgb(124, 58, 237); /* Accent Purple */
+            font-weight: bold;
+            margin: 0 0 5px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid rgb(124, 58, 237);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            text-transform: capitalize;
+        }
+
+        /* CV Item list layout */
+        .cv-item {
+            margin-bottom: 12px;
+        }
+
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: bold;
+            font-size: 11pt;
+            margin-bottom: 2px;
+        }
+
+        .cv-item-sub {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-style: italic;
+            color: #222222;
+            font-size: 10.5pt;
+            margin-bottom: 4px;
+        }
+
+        .cv-item-title {
+            font-weight: bold;
+        }
+
+        .cv-item-date, .cv-item-location {
+            font-weight: normal;
+            font-size: 10.5pt;
+            text-align: right;
+        }
+
+        /* Lists */
+        ul {
+            margin: 0 0 0 20px;
+            padding: 0;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 10.5pt;
+            text-align: justify;
+        }
+
+        /* Skills layout */
+        .skills-list {
+            margin-top: 6px;
+            font-size: 10.5pt;
+        }
+
+        .skills-list p {
+            margin: 4px 0;
+        }
+
+        .skills-list strong {
+            font-size: 10.5pt;
+            color: #111111;
+            display: inline-block;
+            width: 160px;
+        }
+
+        /* Print optimization */
+        @media print {
+            body {
+                background-color: transparent;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .container {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <h1>Abdelrahman Elsawy</h1>
+            <p class="contact-info">
+                <a href="mailto:abdelrahman.elsawy1997@gmail.com">abdelrahman.elsawy1997@gmail.com</a> | 
+                <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer">github.com/AbdelrahmanElsawy404</a>
+            </p>
+        </header>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Technische Universität Dortmund</span>
+                    <span class="cv-item-date">Oct 2022 &ndash; 2027 (Expected)</span>
+                </div>
+                <div class="cv-item-sub">
+                    <span>Bachelor of Science (B.Sc.) in Computer Science</span>
+                    <span class="cv-item-location">Dortmund, Germany</span>
+                </div>
+                <ul>
+                    <li>Relevant topics include algorithms, data structures, probability, linear algebra, statistics, and machine learning.</li>
+                    <li>Building personal projects in data analysis, natural language processing, and image classification.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects / Research Experience -->
+        <section>
+            <h2>Projects</h2>
+
+            <!-- Sentiment Analysis System -->
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Sentiment Analysis System</span>
+                    <span class="cv-item-date">2026</span>
+                </div>
+                <div class="cv-item-sub">
+                    <span>Natural Language Processing</span>
+                    <span class="cv-item-location"><a href="https://github.com/AbdelrahmanElsawy404/Sentiment-Analysis-System" target="_blank" rel="noopener noreferrer">Repository Link</a></span>
+                </div>
+                <ul>
+                    <li>Compared the VADER sentiment model with a transformer-based RoBERTa model on customer reviews.</li>
+                    <li>Used Python, NLTK, PyTorch, and Hugging Face Transformers to prepare data and evaluate predictions.</li>
+                </ul>
+            </div>
+
+            <!-- Cats vs. Dogs Classifier -->
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Cats vs. Dogs Classifier</span>
+                    <span class="cv-item-date">2026</span>
+                </div>
+                <div class="cv-item-sub">
+                    <span>Deep Learning Image Classification</span>
+                    <span class="cv-item-location"><a href="https://github.com/AbdelrahmanElsawy404/Image-Classification" target="_blank" rel="noopener noreferrer">Repository Link</a></span>
+                </div>
+                <ul>
+                    <li>Built and trained a Convolutional Neural Network using TensorFlow and Keras to classify images as cats or dogs.</li>
+                    <li>Used data augmentation and batch normalization and achieved approximately 82.5% validation accuracy.</li>
+                </ul>
+            </div>
+
+            <!-- Housing Price Predictor -->
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Housing Price Predictor</span>
+                    <span class="cv-item-date">2026</span>
+                </div>
+                <div class="cv-item-sub">
+                    <span>Ensemble Regression Pipeline</span>
+                    <span class="cv-item-location"><a href="https://github.com/AbdelrahmanElsawy404/Housing-Price-Predictor" target="_blank" rel="noopener noreferrer">Repository Link</a></span>
+                </div>
+                <ul>
+                    <li>Prepared housing data with missing-value handling, encoding, and scaling for regression models.</li>
+                    <li>Compared several estimators and used a stacking regressor, reaching a cross-validated RMSE of 0.117.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <p><strong>Languages:</strong> Python, SQL</p>
+                <p><strong>Libraries & Frameworks:</strong> Pandas, NumPy, Scikit-Learn, TensorFlow, PyTorch, Matplotlib, Seaborn</p>
+                <p><strong>Developer Tools:</strong> Git, GitHub, Jupyter Notebook, VS Code</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

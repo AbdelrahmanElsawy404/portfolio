@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Elsawy | Computer Science Student</title>
+    <meta name="description" content="Portfolio of Abdelrahman Elsawy, a Computer Science student at TU Dortmund interested in data science and machine learning.">
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Theme toggle"><i class="fa-solid fa-sun"></i></button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Abdelrahman</h1>
+                <h2 class="hero-subtitle">Computer Science Student</h2>
+                <p class="hero-description">
+                    I study Computer Science at TU Dortmund and I am interested in data science and machine learning.
+                    I use Python and SQL and build personal projects with Pandas, Scikit-learn, TensorFlow, and PyTorch.
+                    I am looking for a working-student or internship opportunity where I can improve my skills and gain practical experience.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                    <a href="https://www.linkedin.com/in/abdelrahman-elsawy-053952407" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:abdelrahman.elsawy1997@gmail.com" class="icon-link" aria-label="Email Abdelrahman"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="profile_picture.jpg" alt="Profile Picture" id="profile-img">
+                </div>
+            </div>
+        </header>
+
+        <!-- Education Section -->
+        <section id="education" class="experience-section">
+            <div class="section-header">
+                <h2>Education</h2>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-logo">
+                    <a href="https://www.tu-dortmund.de/" target="_blank" rel="noopener noreferrer">
+                        <div class="logo-circle" style="overflow: hidden;">
+                            <img src="https://cdn.brandfetch.io/idaMCrFDaQ/w/1024/h/1024/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1777952015856" alt="TU Dortmund Logo" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </a>
+                </div>
+                <div class="timeline-details">
+                    <div class="timeline-header">
+                        <h3>Technische Universität Dortmund</h3>
+                        <span class="date">2022 - 2027</span>
+                    </div>
+                    <p class="degree">Bachelor of Science (B.Sc.) in Computer Science</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer" class="view-more">View GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Sentiment Analysis System -->
+                <a href="https://github.com/AbdelrahmanElsawy404/Sentiment-Analysis-System" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-img">
+                        <img src="project_thumbnail_sentiment.png" alt="Sentiment Analysis System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sentiment Analysis System</h3>
+                        <p>A sentiment analysis project comparing VADER with a RoBERTa model on customer reviews.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Hugging Face</span>
+                            <span class="tech-tag">RoBERTa</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">VADER</span>
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn-secondary"><i class="fa-brands fa-github"></i> Source</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Cats vs. Dogs Image Classifier -->
+                <a href="https://github.com/AbdelrahmanElsawy404/Image-Classification" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-img">
+                        <img src="project_thumbnail_cnn.png" alt="Cats vs. Dogs Image Classifier">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cats vs. Dogs Classifier</h3>
+                        <p>A CNN project built with TensorFlow and Keras to classify images of cats and dogs.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn-secondary"><i class="fa-brands fa-github"></i> Source</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 6: Housing Price Predictor -->
+                <a href="https://github.com/AbdelrahmanElsawy404/Housing-Price-Predictor" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-img">
+                        <img src="project_thumbnail_house.png" alt="Housing Price Predictor">
+                    </div>
+                    <div class="project-info">
+                        <h3>Housing Price Predictor</h3>
+                        <p>A regression project that compares several models and uses stacking to predict house prices.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">CatBoost</span>
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">LightGBM</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">XGBoost</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn-secondary"><i class="fa-brands fa-github"></i> Source</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://github.com/AbdelrahmanElsawy404/Titanic" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-img">
+                        <img src="project_thumbnail_3.png" alt="Titanic Survival Prediction">
+                    </div>
+                    <div class="project-info">
+                        <h3>Titanic Survival Prediction</h3>
+                        <p>A classification project using Scikit-learn to predict passenger survival from the Titanic dataset.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn-secondary"><i class="fa-brands fa-github"></i> Source</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="https://github.com/AbdelrahmanElsawy404/Iris-Flower-Classification" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-img">
+                        <img src="project_thumbnail_4.png" alt="Iris Flower Classification">
+                    </div>
+                    <div class="project-info">
+                        <h3>Iris Flower Classification</h3>
+                        <p>A classification project using flower measurements to predict iris species.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn-secondary"><i class="fa-brands fa-github"></i> Source</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 5 -->
+                <a href="https://github.com/AbdelrahmanElsawy404/Build-Linear-Regression" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-img">
+                        <img src="project_thumbnail_5.png" alt="Build Linear Regression">
+                    </div>
+                    <div class="project-info">
+                        <h3>Linear Regression Model</h3>
+                        <p>A simple regression project predicting salary from years of experience.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="btn-secondary"><i class="fa-brands fa-github"></i> Source</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Abdelrahman Elsawy</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/abdelrahman-elsawy-053952407" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:abdelrahman.elsawy1997@gmail.com" aria-label="Email Abdelrahman"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="script.js?v=1.1"></script>
+</body>
+
+</html>
