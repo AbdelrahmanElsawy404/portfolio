@@ -395,10 +395,65 @@ a {
     margin-bottom: 5rem;
 }
 
+.project-group + .project-group {
+    margin-top: 3.5rem;
+}
+
+.project-group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.project-group-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.project-group-label {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.35rem;
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-group-label-complete {
+    color: #22c55e;
+}
+
+.project-count {
+    flex-shrink: 0;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
+.status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.14);
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+}
+
+.projects-grid-current {
+    grid-template-columns: 1fr;
 }
 
 .project-card {
@@ -414,6 +469,44 @@ a {
 .project-card:hover {
     transform: translateY(-5px);
     border-color: rgba(255,255,255,0.2);
+}
+
+.project-card-current {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    border-color: rgba(59, 130, 246, 0.45);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.project-card-current:hover {
+    border-color: var(--accent-color);
+}
+
+.project-card-current .project-img {
+    min-height: 320px;
+    aspect-ratio: auto;
+    background: #031634;
+}
+
+.project-card-current .project-img img {
+    object-fit: contain;
+}
+
+.project-status {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    background: rgba(13, 14, 18, 0.86);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
 }
 
 .project-img {
@@ -552,5 +645,14 @@ footer {
     
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card-current {
+        display: flex;
+    }
+
+    .project-card-current .project-img {
+        min-height: 0;
+        aspect-ratio: 16/9;
     }
 }
