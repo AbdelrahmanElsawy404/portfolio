@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdelrahman Elsawy | Computer Science Student</title>
-    <meta name="description" content="Portfolio of Abdelrahman Elsawy, a Computer Science student at TU Dortmund interested in data science and machine learning.">
+    <title>Abdelrahman Elsawy | AI Agents & RAG Applications</title>
+    <meta name="description" content="Abdelrahman Elsawy, Computer Science student at TU Dortmund building AI agents, RAG applications, and Python backends with LangGraph, LangChain, and FastAPI.">
     <link rel="icon" href="favicon.svg?v=1" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=1.3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,16 +29,17 @@
         <header id="home" class="hero">
             <div class="hero-content">
                 <h1 class="hero-title">Abdelrahman</h1>
-                <h2 class="hero-subtitle">Computer Science Student</h2>
+                <h2 class="hero-subtitle">Computer Science Student · AI Agents &amp; RAG</h2>
                 <p class="hero-description">
-                    I study Computer Science at TU Dortmund and I am interested in data science and machine learning.
-                    I use Python and SQL and build personal projects with Pandas, Scikit-learn, TensorFlow, and PyTorch.
-                    I am looking for a working-student or internship opportunity where I can improve my skills and gain practical experience.
+                    I study Computer Science at TU Dortmund and focus on AI engineering.
+                    I build LLM applications with Python, LangChain, LangGraph, FastAPI, and Pydantic,
+                    exploring AI agents, RAG, and persistent memory.
+                    I am looking for a working-student or internship opportunity to put these skills into practice.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
-                    <a href="https://www.linkedin.com/in/abdelrahman-elsawy-053952407" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="resume.pdf?v=20261022" target="_blank" rel="noopener noreferrer" class="btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                    <a href="https://www.linkedin.com/in/abdelrahman-elsawy-053952407/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
                     <a href="mailto:abdelrahman.elsawy1997@gmail.com" class="icon-link" aria-label="Email Abdelrahman"><i class="fa-solid fa-envelope"></i></a>
                 </div>
@@ -74,29 +75,69 @@
             </div>
         </section>
 
-        <!-- Featured Projects -->
+        <!-- Current focus -->
+        <section class="focus-section" aria-labelledby="focus-heading">
+            <div class="section-header"><h2 id="focus-heading">Current Focus</h2></div>
+            <div class="tech-tags focus-tags" aria-label="Technologies used in my projects">
+                <span class="tech-tag">Python</span><span class="tech-tag">LangChain</span>
+                <span class="tech-tag">LangGraph</span><span class="tech-tag">RAG</span>
+                <span class="tech-tag">FastAPI</span><span class="tech-tag">Pydantic</span>
+                <span class="tech-tag">Mem0</span><span class="tech-tag">SQLite</span>
+            </div>
+            <p class="learning-note">Currently learning: MCP (Model Context Protocol) and Docker.</p>
+        </section>
+
+        <!-- Featured projects match my GitHub pins -->
         <section id="projects" class="projects-section">
             <div class="section-header">
-                <h2>Projects</h2>
-                <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer" class="view-more">View GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                <h2>Featured Projects</h2>
+                <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer" class="view-more">View GitHub <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
             </div>
-
-            <div class="project-group project-group-current">
-                <div class="project-group-header">
-                    <div>
-                        <p class="project-group-label"><span class="status-dot"></span> Active project</p>
-                        <h3>Currently Building</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <a class="project-img" href="https://abdelrahmanelsawy404.github.io/Bachelors-Thesis-Assistant-Demo/" target="_blank" rel="noopener noreferrer" aria-label="Try the Bachelor's Thesis Assistant browser demo">
+                        <img src="project_thumbnail_thesis.png" alt="Bachelor's Thesis Assistant research interface with PDF workspace and human review steps" loading="lazy">
+                    </a>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/AbdelrahmanElsawy404/Bachelors-Thesis-Assistant" target="_blank" rel="noopener noreferrer">Bachelor's Thesis Assistant</a></h3>
+                        <p>A research assistant that retrieves evidence from PDFs and drafts cited reports. LangGraph coordinates Planner, Worker, and Critic roles, with human approvals and resumable sessions.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">LangGraph</span><span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">RAG</span><span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Pydantic</span><span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="btn-secondary" href="https://github.com/AbdelrahmanElsawy404/Bachelors-Thesis-Assistant" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
+                            <a class="btn-secondary" href="https://abdelrahmanelsawy404.github.io/Bachelors-Thesis-Assistant-Demo/" target="_blank" rel="noopener noreferrer">Browser demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                        <small class="demo-note">Scripted demo; no live model calls.</small>
                     </div>
-                    <span class="project-count">1 project</span>
-                </div>
-
-                <div class="projects-grid projects-grid-current">
-
-                <!-- Python Data Checker -->
-                <a href="https://github.com/AbdelrahmanElsawy404/python-data-checker" target="_blank" rel="noopener noreferrer" class="project-card project-card-current">
+                </article>
+                <article class="project-card">
+                    <a class="project-img" href="https://github.com/AbdelrahmanElsawy404/mem0-customer-memory" target="_blank" rel="noopener noreferrer" aria-label="View Mem0 Customer Memory source">
+                        <img src="project_thumbnail_memory.svg" alt="Customer memory flow: save facts, retrieve relevant memories, and continue across sessions" loading="lazy">
+                    </a>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/AbdelrahmanElsawy404/mem0-customer-memory" target="_blank" rel="noopener noreferrer">Mem0 Customer Memory</a></h3>
+                        <p>A support chat exploring memory across conversations. Save and retrieve customer facts, inspect which memories inform a reply, and start a new session without losing stored context.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Mem0</span><span class="tech-tag">Qdrant</span>
+                            <span class="tech-tag">FastEmbed</span><span class="tech-tag">Groq</span>
+                            <span class="tech-tag">Streamlit</span><span class="tech-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="btn-secondary" href="https://github.com/AbdelrahmanElsawy404/mem0-customer-memory" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <details class="project-archive">
+                <summary>More Python &amp; machine learning projects <span class="project-count">7 projects</span></summary>
+                <div class="projects-grid">
+<a href="https://github.com/AbdelrahmanElsawy404/python-data-checker" target="_blank" rel="noopener noreferrer" class="project-card">
                     <div class="project-img">
                         <img src="project_thumbnail_data_checker.jpg" alt="Python Data Checker">
-                        <span class="project-status"><span class="status-dot"></span> In development</span>
+
                     </div>
                     <div class="project-info">
                         <h3>Python Data Checker</h3>
@@ -115,22 +156,8 @@
                         </div>
                     </div>
                 </a>
-                </div>
-            </div>
 
-            <div class="project-group">
-                <div class="project-group-header">
-                    <div>
-                        <p class="project-group-label project-group-label-complete"><i class="fa-solid fa-check"></i> Project archive</p>
-                        <h3>Completed Projects</h3>
-                    </div>
-                    <span class="project-count">6 projects</span>
-                </div>
-
-                <div class="projects-grid">
-
-                <!-- Sentiment Analysis System -->
-                <a href="https://github.com/AbdelrahmanElsawy404/Sentiment-Analysis-System" target="_blank" rel="noopener noreferrer" class="project-card">
+<a href="https://github.com/AbdelrahmanElsawy404/Sentiment-Analysis-System" target="_blank" rel="noopener noreferrer" class="project-card">
                     <div class="project-img">
                         <img src="project_thumbnail_sentiment.png" alt="Sentiment Analysis System">
                     </div>
@@ -153,8 +180,7 @@
                     </div>
                 </a>
 
-                <!-- Cats vs. Dogs Image Classifier -->
-                <a href="https://github.com/AbdelrahmanElsawy404/Image-Classification" target="_blank" rel="noopener noreferrer" class="project-card">
+<a href="https://github.com/AbdelrahmanElsawy404/Image-Classification" target="_blank" rel="noopener noreferrer" class="project-card">
                     <div class="project-img">
                         <img src="project_thumbnail_cnn.png" alt="Cats vs. Dogs Image Classifier">
                     </div>
@@ -174,8 +200,7 @@
                     </div>
                 </a>
 
-                <!-- Project 6: Housing Price Predictor -->
-                <a href="https://github.com/AbdelrahmanElsawy404/Housing-Price-Predictor" target="_blank" rel="noopener noreferrer" class="project-card">
+<a href="https://github.com/AbdelrahmanElsawy404/Housing-Price-Predictor" target="_blank" rel="noopener noreferrer" class="project-card">
                     <div class="project-img">
                         <img src="project_thumbnail_house.png" alt="Housing Price Predictor">
                     </div>
@@ -198,8 +223,7 @@
                     </div>
                 </a>
 
-                <!-- Project 3 -->
-                <a href="https://github.com/AbdelrahmanElsawy404/Titanic" target="_blank" rel="noopener noreferrer" class="project-card">
+<a href="https://github.com/AbdelrahmanElsawy404/Titanic" target="_blank" rel="noopener noreferrer" class="project-card">
                     <div class="project-img">
                         <img src="project_thumbnail_3.png" alt="Titanic Survival Prediction">
                     </div>
@@ -221,8 +245,7 @@
                     </div>
                 </a>
 
-                <!-- Project 4 -->
-                <a href="https://github.com/AbdelrahmanElsawy404/Iris-Flower-Classification" target="_blank" rel="noopener noreferrer" class="project-card">
+<a href="https://github.com/AbdelrahmanElsawy404/Iris-Flower-Classification" target="_blank" rel="noopener noreferrer" class="project-card">
                     <div class="project-img">
                         <img src="project_thumbnail_4.png" alt="Iris Flower Classification">
                     </div>
@@ -244,8 +267,7 @@
                     </div>
                 </a>
 
-                <!-- Project 5 -->
-                <a href="https://github.com/AbdelrahmanElsawy404/Build-Linear-Regression" target="_blank" rel="noopener noreferrer" class="project-card">
+<a href="https://github.com/AbdelrahmanElsawy404/Build-Linear-Regression" target="_blank" rel="noopener noreferrer" class="project-card">
                     <div class="project-img">
                         <img src="project_thumbnail_5.png" alt="Build Linear Regression">
                     </div>
@@ -266,16 +288,14 @@
                     </div>
                 </a>
                 </div>
-            </div>
+            </details>
         </section>
-
-
 
         <!-- Footer -->
         <footer>
             <p>© 2026 Abdelrahman Elsawy</p>
             <div class="footer-links">
-                <a href="https://www.linkedin.com/in/abdelrahman-elsawy-053952407" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/abdelrahman-elsawy-053952407/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
                 <a href="mailto:abdelrahman.elsawy1997@gmail.com" aria-label="Email Abdelrahman"><i class="fa-solid fa-envelope"></i></a>
             </div>

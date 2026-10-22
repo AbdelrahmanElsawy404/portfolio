@@ -7,7 +7,7 @@
     <style>
         @page {
             size: A4;
-            margin: 20mm 20mm 20mm 20mm;
+            margin: 16mm 18mm;
         }
         
         body {
@@ -38,7 +38,7 @@
         /* Header section */
         header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 16px;
         }
 
         h1 {
@@ -67,7 +67,7 @@
 
         /* Section Headings */
         section {
-            margin-bottom: 22px;
+            margin-bottom: 14px;
         }
 
         h2 {
@@ -142,9 +142,11 @@
             font-size: 10.5pt;
             color: #111111;
             display: inline-block;
-            width: 160px;
+            min-width: 150px;
         }
 
+        section > p { margin: 5px 0; font-size: 10.5pt; }
+        .cv-item { break-inside: avoid; }
         /* Print optimization */
         @media print {
             body {
@@ -167,11 +169,16 @@
             <h1>Abdelrahman Elsawy</h1>
             <p class="contact-info">
                 <a href="mailto:abdelrahman.elsawy1997@gmail.com">abdelrahman.elsawy1997@gmail.com</a> | 
-                <a href="https://www.linkedin.com/in/abdelrahman-elsawy-053952407" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+                <a href="https://www.linkedin.com/in/abdelrahman-elsawy-053952407/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
                 <a href="https://github.com/AbdelrahmanElsawy404" target="_blank" rel="noopener noreferrer">GitHub</a> |
-                <a href="https://abdelrahman-portfolio-bla.pages.dev" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                <a href="https://abdelrahman-portfolio-bla.pages.dev/" target="_blank" rel="noopener noreferrer">Portfolio</a>
             </p>
         </header>
+
+        <section>
+            <h2>Profile</h2>
+            <p>Computer Science student focused on AI engineering, LLM applications, and agent workflows. Hands-on experience with LangGraph, LangChain, RAG, FastAPI, and Pydantic through personal projects. Seeking a working-student or internship role in AI application development.</p>
+        </section>
 
         <!-- Education -->
         <section>
@@ -187,61 +194,30 @@
                 </div>
                 <ul>
                     <li>Relevant topics include algorithms, data structures, probability, linear algebra, statistics, and machine learning.</li>
-                    <li>Building personal projects in data analysis, natural language processing, and image classification.</li>
+                    <li>Building personal projects in AI agents, retrieval-augmented generation, and persistent conversational memory.</li>
                     <li>Expected to complete the B.Sc. in 2027 and planning to continue with a Master's degree.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Projects / Research Experience -->
         <section>
-            <h2>Projects</h2>
-
-            <!-- Sentiment Analysis System -->
+            <h2>Selected Projects</h2>
             <div class="cv-item">
-                <div class="cv-item-header">
-                    <span class="cv-item-title">Sentiment Analysis System</span>
-                    <span class="cv-item-date">2026</span>
-                </div>
-                <div class="cv-item-sub">
-                    <span>Natural Language Processing</span>
-                    <span class="cv-item-location"><a href="https://github.com/AbdelrahmanElsawy404/Sentiment-Analysis-System" target="_blank" rel="noopener noreferrer">Repository Link</a></span>
-                </div>
+                <div class="cv-item-header"><span>Bachelor's Thesis Assistant</span><span class="cv-item-date">2026</span></div>
+                <div class="cv-item-sub"><span>Personal project: AI agents &amp; RAG</span><a href="https://github.com/AbdelrahmanElsawy404/Bachelors-Thesis-Assistant">GitHub</a></div>
                 <ul>
-                    <li>Compared the VADER sentiment model with a transformer-based RoBERTa model on customer reviews.</li>
-                    <li>Used Python, NLTK, PyTorch, and Hugging Face Transformers to prepare data and evaluate predictions.</li>
+                    <li>Built a LangGraph workflow coordinating Planner, Worker, and Critic roles, with human approval gates and SQLite checkpoints for resumable research sessions.</li>
+                    <li>Implemented PDF text extraction, embedding-based retrieval, and reranking to support cited drafts; used LangChain integrations and Pydantic schemas for structured model responses.</li>
+                    <li>Connected a FastAPI backend to a web interface with streamed progress and report downloads; published a separate scripted browser demo on GitHub Pages.</li>
                 </ul>
             </div>
-
-            <!-- Cats vs. Dogs Classifier -->
             <div class="cv-item">
-                <div class="cv-item-header">
-                    <span class="cv-item-title">Cats vs. Dogs Classifier</span>
-                    <span class="cv-item-date">2026</span>
-                </div>
-                <div class="cv-item-sub">
-                    <span>Deep Learning Image Classification</span>
-                    <span class="cv-item-location"><a href="https://github.com/AbdelrahmanElsawy404/Image-Classification" target="_blank" rel="noopener noreferrer">Repository Link</a></span>
-                </div>
+                <div class="cv-item-header"><span>Mem0 Customer Memory</span><span class="cv-item-date">2026</span></div>
+                <div class="cv-item-sub"><span>Personal project: persistent conversational memory</span><a href="https://github.com/AbdelrahmanElsawy404/mem0-customer-memory">GitHub</a></div>
                 <ul>
-                    <li>Built and trained a Convolutional Neural Network using TensorFlow and Keras to classify images as cats or dogs.</li>
-                    <li>Used data augmentation and batch normalization and achieved approximately 82.5% validation accuracy.</li>
-                </ul>
-            </div>
-
-            <!-- Housing Price Predictor -->
-            <div class="cv-item">
-                <div class="cv-item-header">
-                    <span class="cv-item-title">Housing Price Predictor</span>
-                    <span class="cv-item-date">2026</span>
-                </div>
-                <div class="cv-item-sub">
-                    <span>Ensemble Regression Pipeline</span>
-                    <span class="cv-item-location"><a href="https://github.com/AbdelrahmanElsawy404/Housing-Price-Predictor" target="_blank" rel="noopener noreferrer">Repository Link</a></span>
-                </div>
-                <ul>
-                    <li>Prepared housing data with missing-value handling, encoding, and scaling for regression models.</li>
-                    <li>Compared several estimators and used a stacking regressor, reaching a cross-validated RMSE of 0.117.</li>
+                    <li>Built a Streamlit support chat that retrieves customer-specific memories before generating replies and preserves stored facts across new chat sessions.</li>
+                    <li>Integrated Mem0, local Qdrant, and FastEmbed for memory storage and search, Groq for replies and fact extraction, and SQLite for stable customer IDs.</li>
+                    <li>Added views of saved and retrieved memories, customer-filtered searches, and memory deletion to explore how persistent context affects replies.</li>
                 </ul>
             </div>
         </section>
@@ -251,9 +227,12 @@
             <h2>Skills</h2>
             <div class="skills-list">
                 <p><strong>Programming:</strong> Python, SQL</p>
-                <p><strong>Libraries & Frameworks:</strong> Pandas, NumPy, Scikit-Learn, TensorFlow, PyTorch, Matplotlib, Seaborn</p>
-                <p><strong>Developer Tools:</strong> Git, GitHub, Jupyter Notebook, VS Code</p>
-                <p><strong>Spoken Languages:</strong> German (B2), English (B2)</p>
+                <p><strong>AI Applications:</strong> LangChain, LangGraph, RAG, Mem0, Qdrant, FastEmbed</p>
+                <p><strong>Backend &amp; Interfaces:</strong> FastAPI, Pydantic, SQLite, Streamlit</p>
+                <p><strong>Tools:</strong> Git, GitHub, pytest, Jupyter Notebook, VS Code</p>
+                <p><strong>ML Foundation:</strong> Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch</p>
+                <p><strong>Currently Learning:</strong> MCP (Model Context Protocol), Docker</p>
+                <p><strong>Languages:</strong> German (B2), English (B2)</p>
             </div>
         </section>
 
