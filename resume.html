@@ -7,7 +7,7 @@
     <style>
         @page {
             size: A4;
-            margin: 16mm 18mm;
+            margin: 20mm 20mm 20mm 20mm;
         }
         
         body {
@@ -38,7 +38,7 @@
         /* Header section */
         header {
             text-align: center;
-            margin-bottom: 16px;
+            margin-bottom: 25px;
         }
 
         h1 {
@@ -67,7 +67,7 @@
 
         /* Section Headings */
         section {
-            margin-bottom: 14px;
+            margin-bottom: 22px;
         }
 
         h2 {
@@ -142,10 +142,9 @@
             font-size: 10.5pt;
             color: #111111;
             display: inline-block;
-            min-width: 150px;
+            width: 160px;
         }
 
-        section > p { margin: 5px 0; font-size: 10.5pt; }
         .cv-item { break-inside: avoid; }
         /* Print optimization */
         @media print {
@@ -175,12 +174,7 @@
             </p>
         </header>
 
-        <section>
-            <h2>Profile</h2>
-            <p>Computer Science student focused on AI engineering, LLM applications, and agent workflows. Hands-on experience with LangGraph, LangChain, RAG, FastAPI, and Pydantic through personal projects. Seeking a working-student or internship role in AI application development.</p>
-        </section>
-
-        <!-- Education -->
+<!-- Education -->
         <section>
             <h2>Education</h2>
             <div class="cv-item">
@@ -201,10 +195,10 @@
         </section>
 
         <section>
-            <h2>Selected Projects</h2>
+            <h2>Projects</h2>
             <div class="cv-item">
                 <div class="cv-item-header"><span>Bachelor's Thesis Assistant</span><span class="cv-item-date">2026</span></div>
-                <div class="cv-item-sub"><span>Personal project: AI agents &amp; RAG</span><a href="https://github.com/AbdelrahmanElsawy404/Bachelors-Thesis-Assistant">GitHub</a></div>
+                <div class="cv-item-sub"><span>AI Agents &amp; Retrieval-Augmented Generation</span><span class="cv-item-location"><a href="https://github.com/AbdelrahmanElsawy404/Bachelors-Thesis-Assistant">Repository Link</a></span></div>
                 <ul>
                     <li>Built a LangGraph workflow coordinating Planner, Worker, and Critic roles, with human approval gates and SQLite checkpoints for resumable research sessions.</li>
                     <li>Implemented PDF text extraction, embedding-based retrieval, and reranking to support cited drafts; used LangChain integrations and Pydantic schemas for structured model responses.</li>
@@ -213,7 +207,7 @@
             </div>
             <div class="cv-item">
                 <div class="cv-item-header"><span>Mem0 Customer Memory</span><span class="cv-item-date">2026</span></div>
-                <div class="cv-item-sub"><span>Personal project: persistent conversational memory</span><a href="https://github.com/AbdelrahmanElsawy404/mem0-customer-memory">GitHub</a></div>
+                <div class="cv-item-sub"><span>Persistent Conversational Memory</span><span class="cv-item-location"><a href="https://github.com/AbdelrahmanElsawy404/mem0-customer-memory">Repository Link</a></span></div>
                 <ul>
                     <li>Built a Streamlit support chat that retrieves customer-specific memories before generating replies and preserves stored facts across new chat sessions.</li>
                     <li>Integrated Mem0, local Qdrant, and FastEmbed for memory storage and search, Groq for replies and fact extraction, and SQLite for stable customer IDs.</li>
